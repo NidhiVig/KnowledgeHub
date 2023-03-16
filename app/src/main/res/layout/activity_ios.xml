@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    tools:context=".IosActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="380dp"
+        android:layout_weight="40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50">
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/grey"
+        android:text="iOS application development is the process of making mobile applications for Apple hardware, including iPhone, iPad and iPod Touch. The software is written in the Swift programming language or Objective-C and then deployed to the App Store for users to download.
+If you’re a mobile app developer, you may have had reservations about iOS development. For example, each developer needs a Mac computer—and Macs are generally more expensive than their Windows-based counterparts. In addition, once you complete your app, it faces a stringent quality review process before it can be distributed through the App Store.
+Nevertheless, if your organization’s employees, customers or partners are among the hundreds of millions of Apple iPhone and iPad users around the world, you have obvious reasons to engage in iOS app development. And despite potentially high barriers to entry, developing an iOS app can be as easy as (in some cases easier than) developing for Android. With proper planning and the right resources, you can join the ranks of iOS app developers.
+There are currently two programming languages for iOS app development.
+
+Objective-C: Developed in the early 1980s, Objective-C was the primary programming language for all Apple products for decades. Derived from the C language, Objective-C is an object-oriented programming language centered on passing messages to different processes (as opposed to invoking a process in traditional C programming). Many developers choose to maintain their legacy applications written in Objective-C instead of integrating them into the Swift framework, which was introduced in 2014.
+
+Swift: The Swift programming language is the new “official” language of iOS. While it has many similarities to Objective-C, Swift is designed to use a simpler syntax and is more focused on security than its predecessor. Because it shares a run time with Objective-C, you can easily incorporate legacy code into updated apps. Swift is easy to learn, even for people just beginning to program. Because Swift is faster, more secure and easier to use than Objective-C, you should plan to use it to develop your iOS app unless you have a compelling reason to stick with Objective-C." />
+
+    </ScrollView>
+</LinearLayout>
